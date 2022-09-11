@@ -1,0 +1,118 @@
+@font-face {
+	font-family: 'Helvetica';
+	src: url('../../fonts/Helvetica.ttf');
+}
+:root {
+	--primary: #64cbf4;
+	--blue: #304b9f;
+	--black: black;
+	--white: white;
+	--green: #70be44;
+	--gray: #7d7d7d;
+}
+#landing {
+	// position: relative;
+	background-image: url('./../../images/Mesa.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: calc(100vh - 65px);
+
+	.baby-logo {
+		position: absolute;
+		bottom: 30px;
+		right: 30px;
+	}
+	.box {
+		width: 600px;
+		background-color: #64cbf4;
+		border-radius: 20px;
+		box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+
+		.exchange {
+			color: var(--blue);
+			font-family: 'Helvetica';
+			font-weight: bold;
+			margin-bottom: 0;
+		}
+		.white-box {
+			background-color: var(--white);
+			border-radius: 8px;
+
+			.from {
+				color: var(--blue);
+				font-family: 'Helvetica';
+				font-weight: bold;
+				margin-bottom: 0;
+			}
+			.currency {
+				color: var(--gray);
+				font-family: 'Helvetica';
+				font-weight: bold;
+				font-size: 25px;
+				margin-bottom: 0;
+			}
+			.select {
+				border: 0 !important;
+				color: var(--blue);
+				font-family: 'Helvetica';
+				font-weight: bold;
+			}
+			.swap-button {
+				background: var(--green) !important;
+			}
+		}
+	}
+	.btn-primary {
+		color: #fff;
+		background-color: var(--green) !important;
+		border-color: var(--green) !important;
+		border-radius: 50px !important;
+		width: 80%;
+	}
+}
+
+@media (max-width: 768px) {
+	.smallTab {
+		margin-top: 50px !important;
+	}
+	.ant-progress-outer {
+		width: 50% !important;
+	}
+	.softcapContainer {
+		width: 50% !important;
+		margin-left: 25% !important;
+	}
+}
+
+@media (max-width: 550px) {
+	#landing {
+		height: 100vh;
+		// background-image: none;
+		.smallTab {
+			margin-top: 120px;
+		}
+		h1.title {
+			font-size: 35px;
+			line-height: 40px !important;
+			letter-spacing: normal !important;
+		}
+		h2.token {
+			font-size: 30px !important;
+			line-height: 40px !important;
+			letter-spacing: normal !important;
+		}
+		h3.farm {
+			font-size: 25px !important;
+			line-height: 30px !important;
+			letter-spacing: normal !important;
+		}
+		.ant-progress-outer {
+			width: 80% !important;
+		}
+		.softcapContainer {
+			width: 80% !important;
+			margin-left: 10% !important;
+		}
+	}
+}

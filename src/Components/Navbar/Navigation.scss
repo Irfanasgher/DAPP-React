@@ -1,0 +1,63 @@
+@font-face {
+	font-family: 'FredokaOne';
+	src: local('FredokaOne'), url('../../fonts/FredokaOne-Regular.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'Helvetica';
+	src: url('../../fonts/Helvetica.ttf');
+}
+:root {
+	--primary: #64cbf4;
+	--navbar-bg: #82c0e9;
+	--blue: #304b9f;
+	--white: white;
+}
+
+#navbar {
+	background-color: var(--navbar-bg);
+	position: relative;
+	height: 65px;
+	.appButton {
+		border-radius: 50px;
+		border: none !important;
+		height: 35px;
+		width: 130px;
+		position: relative;
+		font-family: 'Helvetica';
+		background: var(--white) !important;
+		color: var(--blue);
+		font-weight: bold;
+		.innerButton {
+			width: 120px;
+			height: 30px;
+			background-color: var(--white);
+			color: var(--blue);
+			font-weight: bold;
+			border-radius: 12px;
+			position: absolute;
+			font-size: 16px;
+			top: 3px;
+			left: 4px;
+			right: 4px;
+			bottom: 3px;
+		}
+	}
+	.customNav {
+		align-items: center;
+		background-color: var(--navbar-bg);
+
+		.navlink a {
+			color: var(--white);
+			font-family: 'Helvetica';
+			font-weight: bold;
+			letter-spacing: 2px;
+			padding: 8px 25px;
+			font-size: 20px;
+		}
+	}
+	// @media (max-width: 550px) {
+	// 	.logo img {
+	// 		width: 90%;
+	// 	}
+	// }
+}

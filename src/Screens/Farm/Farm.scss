@@ -1,0 +1,125 @@
+@font-face {
+	font-family: 'Helvetica';
+	src: url('../../fonts/Helvetica.ttf');
+}
+:root {
+	--primary: #64cbf4;
+	--blue: #304b9f;
+	--black: black;
+	--white: white;
+	--green: #70be44;
+	--gray: #7d7d7d;
+}
+
+#farm {
+	background-image: url('./../../images/Mesa.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: calc(100vh - 65px);
+
+	.rectangleBox {
+		width: 100%;
+		background-color: var(--primary);
+		border-radius: 20px;
+		box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+		.lbd {
+			color: var(--white);
+			font-family: 'Helvetica';
+			font-weight: 600;
+			letter-spacing: 2px;
+			font-size: 20px;
+		}
+		button.x80 {
+			outline: none;
+			border: 0;
+			background: var(--white);
+			border-radius: 50px;
+			color: var(--primary);
+			font-family: 'Helvetica';
+			font-weight: 600;
+			font-size: 16px;
+		}
+		.apr {
+			color: var(--white);
+			font-family: 'Helvetica';
+			margin-bottom: 0;
+		}
+		.line {
+			background: var(--white);
+			height: 3px;
+			border-radius: 2px;
+			width: 100%;
+		}
+		input.inputBox {
+			outline: none;
+			border: 0;
+			background: var(--white);
+			border-radius: 8px;
+			width: 100%;
+			height: 30px;
+		}
+		button.unstake {
+			outline: none;
+			border: 0;
+			background: #fcb831;
+			border-radius: 8px;
+			color: var(--white);
+			font-family: 'Helvetica';
+			font-weight: 600;
+			font-size: 16px;
+			width: 75px;
+			height: 30px;
+		}
+		.reactangle {
+			background: var(--white);
+			width: 100%;
+			height: 30px;
+			padding-top: 15px;
+
+			.apr0 {
+				color: var(--black);
+				opacity: 0.5;
+			}
+		}
+	}
+	@media (max-width: 1050px) {
+		button.unstake {
+			font-size: 12px !important;
+			width: 58px !important;
+		}
+	}
+	@media (max-width: 770px) {
+		button.unstake {
+			font-size: 10px !important;
+			width: 45px !important;
+		}
+	}
+	@media (max-width: 450px) {
+		.rectangleBox {
+			// width: 120% !important;
+			button.unstake {
+				font-size: 16px !important;
+				width: 75px !important;
+			}
+		}
+	}
+	@media (max-width: 375px) {
+		.rectangleBox {
+			// width: 108% !important;
+			button.unstake {
+				font-size: 14px !important;
+				width: 65px !important;
+			}
+		}
+	}
+	@media (max-width: 320px) {
+		.rectangleBox {
+			width: 100% !important;
+			button.unstake {
+				font-size: 10px !important;
+				width: 50px !important;
+			}
+		}
+	}
+}

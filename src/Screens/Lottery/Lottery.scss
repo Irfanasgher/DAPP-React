@@ -1,0 +1,199 @@
+@font-face {
+	font-family: 'Helvetica';
+	src: url('../../fonts/Helvetica.ttf');
+}
+
+@font-face {
+	font-family: 'Acumin';
+	src: url('../../fonts/Acumin Variable Concept.ttf');
+}
+@font-face {
+	font-family: 'impact';
+	src: url('../../fonts/impact.ttf');
+}
+
+:root {
+	--blue: #304b9f;
+	--white: white;
+	--gold: #f8f152;
+}
+
+#lottery {
+	background-image: url('./../../images/lottery.png');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: calc(100vh - 65px);
+
+	.lotteryImage {
+		width: 70%;
+		height: 610px;
+		object-fit: contain;
+		margin-left: -50px;
+		margin-right: 70px;
+	}
+
+	.littleBabay {
+		color: var(--white);
+		font-family: 'Helvetica';
+		font-weight: bold;
+		font-size: 25px;
+	}
+	.lotteryText {
+		color: var(--gold);
+		font-family: 'impact';
+		font-weight: normal;
+		text-transform: uppercase;
+		font-size: 85px;
+		letter-spacing: 2px;
+		// text-shadow: -2px 2px 0 #f03c3f, 2px 2px 0 #f03c3f, 2px -2px 0 #f03c3f;
+
+		-webkit-text-stroke-width: 1.5px;
+		-webkit-text-stroke-color: #f03c3f;
+		-webkit-text-fill-color: var(--gold);
+	}
+	.prize {
+		color: var(--blue);
+		font-family: 'Helvetica';
+		font-weight: 600;
+		font-size: 22px;
+		margin-bottom: 0;
+	}
+	.priceContainer {
+		background: var(--white);
+		box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+		border-radius: 50px;
+		width: 320px;
+		height: 85px;
+
+		.price {
+			font-size: 55px;
+			color: #c55022;
+			font-family: 'Helvetica';
+			font-weight: bold;
+		}
+	}
+	.lotteryBadge {
+		width: 400px;
+		height: 150px;
+		margin-left: -80px;
+	}
+	.draw {
+		color: var(--white);
+		font-family: 'Helvetica';
+		// font-weight: 600;
+		font-size: 22px;
+	}
+	.anticon svg {
+		display: inline-block;
+		margin-bottom: 5px !important;
+	}
+
+	@media (max-width: 1050px) {
+		.lotteryImage {
+			width: 52% !important;
+			height: 510px !important;
+			margin-left: 40px !important;
+			margin-right: 50px !important;
+		}
+	}
+	@media (max-width: 770px) {
+		.lotteryImage {
+			width: 52% !important;
+			height: 510px !important;
+			margin-left: 40px !important;
+			margin-right: 50px !important;
+		}
+		.littleBabay {
+			font-size: 18px !important;
+		}
+		.lotteryText {
+			font-size: 65px !important;
+		}
+		.prize {
+			font-size: 18px !important;
+		}
+		.priceContainer {
+			width: 235px !important;
+			height: 60px !important;
+
+			.price {
+				font-size: 40px !important;
+			}
+		}
+		.lotteryBadge {
+			width: 315px !important;
+			height: 110px !important;
+		}
+		.draw {
+			font-size: 18px !important;
+		}
+	}
+}
+@media (max-width: 450px) {
+	#lottery {
+		height: auto !important;
+		padding-bottom: 15px !important;
+		.lotteryImage {
+			width: 280px !important;
+			height: auto !important;
+			margin-top: 20px;
+		}
+		.littleBabay {
+			font-size: 18px !important;
+			text-align: center;
+			margin-top: 20px;
+		}
+		.lotteryText {
+			font-size: 65px !important;
+			text-align: center;
+		}
+		.prize {
+			font-size: 18px !important;
+		}
+		.priceContainer {
+			width: 235px !important;
+			height: 60px !important;
+			margin-left: 20%;
+
+			.price {
+				font-size: 40px !important;
+			}
+		}
+		.lotteryBadge {
+			width: 250px !important;
+			height: 90px !important;
+			margin-left: 80px !important;
+		}
+		.draw {
+			font-size: 18px !important;
+		}
+		.detail {
+			text-align: center !important;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	#lottery {
+		.priceContainer {
+			margin-left: 17%;
+		}
+		.lotteryBadge {
+			margin-left: 55px !important;
+		}
+	}
+}
+@media (max-width: 320px) {
+	#lottery {
+		.lotteryImage {
+			width: 230px !important;
+		}
+		.priceContainer {
+			margin-left: 14%;
+		}
+		.lotteryBadge {
+			margin-left: 35px !important;
+		}
+	}
+}

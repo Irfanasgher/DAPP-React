@@ -1,0 +1,60 @@
+@font-face {
+	font-family: 'Helvetica';
+	src: url('../../fonts/Helvetica.ttf');
+}
+:root {
+	--navbar-bg: #82c0e9;
+	--blue: #304b9f;
+	--black: black;
+	--white: white;
+}
+
+#changeTheWorld {
+	background-image: url('./../../images/leaves bg.png');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	// height: calc(100vh - 65px);
+
+	h1 {
+		color: var(--white);
+		font-family: 'Helvetica';
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 70px;
+	}
+	.paragraph {
+		width: 70%;
+		margin-left: 15%;
+	}
+	.white-area {
+		background: var(--white);
+
+		.heading {
+			color: var(--blue);
+			font-family: 'Helvetica';
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.para {
+			font-family: 'Helvetica';
+			font-size: 12px;
+			margin-bottom: 0;
+		}
+	}
+	.btn-primary {
+		color: var(--white);
+		font-family: 'Helvetica';
+		background-color: var(--blue) !important;
+		border-color: var(--blue) !important;
+		text-transform: uppercase;
+		font-weight: 600;
+		border-radius: 40px;
+	}
+	@media (max-width: 450px) {
+		h1 {
+			font-size: 40px !important;
+		}
+	}
+}

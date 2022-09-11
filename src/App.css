@@ -1,0 +1,9 @@
+/* .App {
+	@font-face {
+		font-family: 'Helvetica';
+		src: url('../../fonts/Helvetica.ttf');
+	}
+} */
+.scrollable-element {
+	scrollbar-width: none;
+}
